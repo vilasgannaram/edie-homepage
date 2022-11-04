@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/src/assets/devchallenges.png"
+      type="image/x-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/src/css/output.css" />
+
+    <title>Edie homepage</title>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div class="mx-auto mt-6 w-[90%] lg:mt-8">
+      <!-- HEADER -->
+      <header class="flex items-center justify-between text-gray1">
+        <h1
+          class="font-heebo text-2xl font-semibold lg:text-[36px] lg:leading-[52px]"
+        >
+          Edie
+        </h1>
+
+        <!-- MOBILE NAV -->
+        <nav class="lg:hidden">
+          <ul class="list-none">
+            <li class="h-1 w-8 rounded-xl bg-black"></li>
+            <li class="my-1 h-1 w-8 rounded-xl bg-black"></li>
+            <li class="h-1 w-8 rounded-xl bg-black"></li>
+          </ul>
+        </nav>
+
+        <!-- DESKTOP NAV -->
+        <nav class="hidden w-[55%] lg:block">
+          <ul
+            class="flex list-none items-center justify-between font-poppins text-xl font-medium"
+          >
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Services</li>
+            <li class="cursor-pointer">Our Works</li>
+            <li class="cursor-pointer">Clients</li>
+            <li class="cursor-pointer">Contact</li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- MAIN -->
+      <main class="mt-12 lg:mt-[98px]">
+        <!-- HERO SECTION -->
+        <section class="font-poppins font-medium">
+          <!-- top text -->
+          <div class="ml-[8%] max-w-[272px] lg:ml-[12%] lg:max-w-[543px]">
+            <h3
+              class="text-xs text-blue lg:text-base lg:text-[18px] lg:leading-[27px]"
+            >
+              Unhappy with your website?
+            </h3>
+
+            <h2
+              class="mt-1 text-[24px] leading-9 text-gray1 lg:mt-4 lg:text-[48px] lg:leading-[72px]"
+            >
+              We create beautiful and fast web services
+            </h2>
+          </div>
+
+          <!-- image -->
+          <div class="mt-4 mb-5 lg:my-10">
+            <img
+              class="w-full rounded-xl"
+              src="./assets/heroImage.jpg"
+              alt="hero image"
+            />
+          </div>
+
+          <!-- bottom text -->
+          <div class="ml-[8%] lg:ml-[12%] lg:max-w-[366px]">
+            <h2
+              class="max-w-[227px] text-[24px] leading-9 text-gray1 lg:max-w-[366px] lg:text-[48px] lg:leading-[72px]"
+            >
+              Story, emotion and purpose
+            </h2>
+
+            <p
+              class="mt-8 max-w-[275px] text-[12px] leading-[18px] text-gray2 lg:mt-10 lg:max-w-[366px] lg:text-[18px] lg:leading-[27px]"
+            >
+              We help transform your ideas into real world applications that
+              will outperform your toughest competition and help you achieve
+              your strategic goals in short period of time.
+            </p>
+
+            <!-- newsletter -->
+            <form class="mt-8 lg:mt-10">
+              <label
+                class="text-xs text-gray3 lg:text-[14px] lg:leading-[21px]"
+                for="email"
+                >Want us to contact you?</label
+              >
+              <div class="relative w-full lg:mt-4">
+                <input
+                  class="rounded-xl bg-gray6 px-5 pt-4 pb-2 text-[14px] leading-5 text-gray4 lg:py-4"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <button
+                  class="absolute right-0 top-[50%] -translate-y-[50%] rounded-xl bg-blue py-3 px-5 text-white lg:px-7"
+                >
+                  Join
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- SERVICES -->
+        <article
+          class="mx-auto mt-[108px] font-poppins lg:mt-[200px] lg:w-[80%]"
+        >
+          <h2
+            class="max-w-[259px] text-[24px] font-medium leading-9 text-gray1 lg:max-w-[346px] lg:text-[36px] lg:leading-[54px]"
+          >
+            We offer high demand services
+          </h2>
+
+          <!-- services list -->
+          <div class="grid-cols-3 gap-x-16 lg:grid">
+            <!-- UI/UX Design -->
+            <div
+              class="mt-[92px] cursor-pointer rounded-xl px-6 py-10 hover:shadow-xl hover:drop-shadow-md"
+            >
+              <button class="rounded-2xl bg-blue p-5">
+                <img width="28px" src="./assets/edit.svg" alt="edit" />
+              </button>
+
+              <h3 class="mt-8 text-[24px] font-bold leading-9 text-gray1">
+                UI/UX Design
+              </h3>
+
+              <p class="mt-6 text-gray2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+
+              <button
+                class="mt-7 block max-w-max rounded-xl bg-gray5 py-2 px-3 text-gray3"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <!-- Front End -->
+            <div
+              class="mt-[92px] cursor-pointer rounded-xl px-6 py-10 hover:shadow-xl hover:drop-shadow-md"
+            >
+              <button class="rounded-2xl bg-green p-5">
+                <img width="28px" src="./assets/code.svg" alt="code" />
+              </button>
+
+              <h3 class="mt-8 text-[24px] font-bold leading-9 text-gray1">
+                Front End
+              </h3>
+
+              <p class="mt-6 text-gray2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+
+              <button
+                class="mt-7 block max-w-max rounded-xl bg-gray5 py-2 px-3 text-gray3"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <!-- Back End -->
+            <div
+              class="mt-[92px] cursor-pointer rounded-xl px-6 py-10 hover:shadow-xl hover:drop-shadow-md"
+            >
+              <button class="rounded-2xl bg-red p-5">
+                <img width="28px" src="./assets/storage.svg" alt="storage" />
+              </button>
+
+              <h3 class="mt-8 text-[24px] font-bold leading-9 text-gray1">
+                Back End
+              </h3>
+
+              <p class="mt-6 text-gray2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+
+              <button
+                class="mt-7 block max-w-max rounded-xl bg-gray5 py-2 px-3 text-gray3"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- OUR WORK -->
+        <article
+          class="mx-auto mt-[108px] font-poppins lg:mt-[200px] lg:w-[80%]"
+        >
+          <h3
+            class="ml-4 max-w-[259px] text-[24px] font-medium leading-9 text-gray1 lg:ml-0 lg:max-w-[448px] lg:text-[36px] lg:leading-[54px]"
+          >
+            Good design means good business
+          </h3>
+
+          <!-- WORK SAMPLES -->
+          <div class="flex-wrap justify-between lg:flex">
+            <!-- Smart home dashboard -->
+            <div class="mt-8 cursor-pointer lg:mt-36 lg:w-1/2">
+              <img
+                class="rounded-2xl"
+                src="./assets/smarthome.jpg"
+                alt="smarthome"
+              />
+              <figcaption
+                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+              >
+                Full stack application
+              </figcaption>
+              <h4
+                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+              >
+                Smart home dashboard
+              </h4>
+            </div>
+
+            <!-- Onboard application -->
+            <div class="mt-8 cursor-pointer lg:w-1/2">
+              <img
+                class="rounded-2xl"
+                src="./assets/onboard.png"
+                alt="onboard"
+              />
+              <figcaption
+                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+              >
+                UX/UI design
+              </figcaption>
+              <h4
+                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+              >
+                Onboard application
+              </h4>
+            </div>
+
+            <!-- Booking system -->
+            <div class="mt-8 cursor-pointer lg:mt-36 lg:w-1/2">
+              <img
+                class="rounded-2xl"
+                src="./assets/booking.png"
+                alt="booking"
+              />
+              <figcaption
+                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+              >
+                Mobile application
+              </figcaption>
+              <h4
+                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+              >
+                Booking system
+              </h4>
+            </div>
+
+            <!-- Juice product homepage -->
+            <div class="mt-8 cursor-pointer lg:w-1/2">
+              <img
+                class="rounded-2xl"
+                src="./assets/juice-product.png"
+                alt="juice-product"
+              />
+              <figcaption
+                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+              >
+                Front End applicati on
+              </figcaption>
+              <h4
+                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+              >
+                Juice product homepage
+              </h4>
+            </div>
+          </div>
+
+          <div class="mt-8 flex items-center lg:justify-end">
+            <a
+              class="flex items-center text-[18px] leading-[27px] text-blue lg:text-[24px] lg:leading-9"
+              href=""
+            >
+              <p>see more</p>
+              <img
+                class="ml-2 w-[18px]"
+                src="./assets/arrow_right.svg"
+                alt="right arrow"
+              />
+            </a>
+          </div>
+        </article>
+
+        <!-- OUR TEAM -->
+        <article
+          class="mx-auto mt-[108px] font-poppins lg:mt-[200px] lg:w-[80%]"
+        >
+          <!-- main article -->
+          <div>
+            <!-- TEXT -->
+            <div>
+              <h5>Meet the team</h5>
+              <h3>We are chilled and a laidback team</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- IMAGES -->
+            <div>
+              <img src="./assets/person1.png" alt="person1" />
+              <img src="./assets/person2.png" alt="person2" />
+              <img src="./assets/person3.png" alt="person3" />
+            </div>
+          </div>
+
+          <!-- quotes -->
+          <div>
+            <p>
+              “Fast and outstanding resutls. Edie understands their customer’s
+              needs. They have a young and talented team.”
+            </p>
+
+            <!-- by -->
+            <div>
+              <img src="./assets/person4.png" alt="person4" />
+              <div>
+                <h5>Carlos Tran</h5>
+                <p>The Decorate Gatsby</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div>
+          <!-- navs -->
+          <div>
+            <ul class="list-none">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Our Works</li>
+              <li>Clients</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <!-- social media -->
+          <div>
+            <h5>Edie</h5>
+
+            <div>
+              <img src="./assets/instagram.svg" alt="instagram" />
+              <img src="./assets/linkedin.svg" alt="linkedin" />
+              <img src="./assets/twitter.svg" alt="twitter" />
+            </div>
+          </div>
+
+          <!-- newsletter -->
+          <div>
+            <label for="email_1">Want us to contact you?</label>
+            <div>
+              <input type="email" name="email" id="email_1" />
+              <button>Join</button>
+            </div>
+          </div>
+        </div>
+
+        <p>created by username - devChallenges.io</p>
+      </footer>
+    </div>
+  </body>
+</html>
