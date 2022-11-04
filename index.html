@@ -20,6 +20,8 @@
       rel="stylesheet"
     />
 
+    <script src="./app.js" defer></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -71,9 +73,9 @@
     <!-- CONTAINER -->
     <div class="mx-auto mt-6 w-[90%] lg:mt-8">
       <!-- HEADER -->
-      <header class="flex items-center justify-between text-gray1">
+      <header id="home" class="flex items-center justify-between text-gray1">
         <h1
-          class="font-heebo text-2xl font-semibold lg:text-[36px] lg:leading-[52px]"
+          class="cursor-pointer font-heebo text-2xl font-semibold lg:text-[36px] lg:leading-[52px]"
         >
           Edie
         </h1>
@@ -92,11 +94,11 @@
           <ul
             class="flex list-none items-center justify-between font-poppins text-xl font-medium"
           >
-            <li class="cursor-pointer">Home</li>
-            <li class="cursor-pointer">Services</li>
-            <li class="cursor-pointer">Our Works</li>
-            <li class="cursor-pointer">Clients</li>
-            <li class="cursor-pointer">Contact</li>
+            <li class="hover:opacity-60"><a href="#home">Home</a></li>
+            <li class="hover:opacity-60"><a href="#services">Services</a></li>
+            <li class="hover:opacity-60"><a href="#ourWork">Our Works</a></li>
+            <li class="hover:opacity-60"><a href="#clients">Clients</a></li>
+            <li class="hover:opacity-60"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -108,7 +110,7 @@
           <!-- top text -->
           <div class="ml-[8%] max-w-[272px] lg:ml-[12%] lg:max-w-[543px]">
             <h3
-              class="text-xs text-blue lg:text-base lg:text-[18px] lg:leading-[27px]"
+              class="cursor-pointer text-xs text-blue lg:text-base lg:text-[18px] lg:leading-[27px]"
             >
               Unhappy with your website?
             </h3>
@@ -152,16 +154,16 @@
                 for="email"
                 >Want us to contact you?</label
               >
-              <div class="relative w-full lg:mt-4">
+              <div class="relative lg:mt-4">
                 <input
-                  class="rounded-xl bg-gray6 px-5 pt-4 pb-2 text-[14px] leading-5 text-gray4 lg:py-4"
+                  class="w-full rounded-xl bg-gray6 px-5 pt-4 pb-2 text-[14px] leading-5 text-gray4 lg:py-4"
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email"
                 />
                 <button
-                  class="absolute right-0 top-[50%] -translate-y-[50%] rounded-xl bg-blue py-3 px-5 text-white lg:px-7"
+                  class="absolute right-1 top-[50%] -translate-y-[50%] rounded-xl bg-blue py-3 px-5 text-white lg:px-7"
                 >
                   Join
                 </button>
@@ -172,6 +174,7 @@
 
         <!-- SERVICES -->
         <article
+          id="services"
           class="mx-auto mt-[108px] font-poppins lg:mt-[200px] lg:w-[80%]"
         >
           <h2
@@ -184,6 +187,7 @@
           <div class="grid-cols-3 gap-x-16 lg:grid">
             <!-- UI/UX Design -->
             <div
+              id="design"
               class="mt-16 cursor-pointer rounded-xl px-6 py-10 hover:shadow-xl hover:drop-shadow-md"
             >
               <button class="rounded-2xl bg-blue p-5">
@@ -200,6 +204,7 @@
               </p>
 
               <button
+                id="designBtn"
                 class="mt-7 block max-w-max rounded-xl bg-gray5 py-2 px-3 text-gray3"
               >
                 Get Started
@@ -208,6 +213,7 @@
 
             <!-- Front End -->
             <div
+              id="frontEnd"
               class="mt-16 cursor-pointer rounded-xl px-6 py-10 hover:shadow-xl hover:drop-shadow-md"
             >
               <button class="rounded-2xl bg-green p-5">
@@ -224,6 +230,7 @@
               </p>
 
               <button
+                id="frontEndBtn"
                 class="mt-7 block max-w-max rounded-xl bg-gray5 py-2 px-3 text-gray3"
               >
                 Get Started
@@ -232,6 +239,7 @@
 
             <!-- Back End -->
             <div
+              id="backEnd"
               class="mt-16 cursor-pointer rounded-xl px-6 py-10 hover:shadow-xl hover:drop-shadow-md"
             >
               <button class="rounded-2xl bg-red p-5">
@@ -248,6 +256,7 @@
               </p>
 
               <button
+                id="backEndBtn"
                 class="mt-7 block max-w-max rounded-xl bg-gray5 py-2 px-3 text-gray3"
               >
                 Get Started
@@ -258,6 +267,7 @@
 
         <!-- OUR WORK -->
         <article
+          id="ourWork"
           class="mx-auto mt-[108px] font-poppins lg:mt-[200px] lg:w-[80%]"
         >
           <h3
@@ -267,84 +277,97 @@
           </h3>
 
           <!-- WORK SAMPLES -->
-          <div class="flex-wrap justify-between lg:flex">
-            <!-- Smart home dashboard -->
-            <div class="mt-8 cursor-pointer lg:mt-36 lg:w-1/2">
-              <img
-                class="rounded-2xl"
-                src="./assets/smarthome.jpg"
-                alt="smarthome"
-              />
-              <figcaption
-                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
-              >
-                Full stack application
-              </figcaption>
-              <h4
-                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
-              >
-                Smart home dashboard
-              </h4>
+          <div>
+            <div class="justify-center lg:flex">
+              <!-- Smart home dashboard -->
+              <div class="mt-8 lg:pt-[150px]">
+                <img
+                  class="w-full rounded-2xl"
+                  src="./assets/smarthome.jpg"
+                  alt="smarthome"
+                />
+
+                <figcaption
+                  class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+                >
+                  Full stack application
+                </figcaption>
+
+                <h4
+                  class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+                >
+                  Smart home dashboard
+                </h4>
+              </div>
+
+              <!-- Onboard application -->
+              <div class="mt-8 lg:ml-8">
+                <img
+                  class="w-full rounded-2xl"
+                  src="./assets/onboard.png"
+                  alt="onboard"
+                />
+
+                <figcaption
+                  class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+                >
+                  UX/UI design
+                </figcaption>
+
+                <h4
+                  class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+                >
+                  Onboard application
+                </h4>
+              </div>
             </div>
 
-            <!-- Onboard application -->
-            <div class="mt-8 cursor-pointer lg:w-1/2">
-              <img
-                class="rounded-2xl"
-                src="./assets/onboard.png"
-                alt="onboard"
-              />
-              <figcaption
-                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
-              >
-                UX/UI design
-              </figcaption>
-              <h4
-                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
-              >
-                Onboard application
-              </h4>
-            </div>
+            <div class="justify-center lg:flex">
+              <!-- Booking system -->
+              <div class="mt-8 lg:pt-[150px]">
+                <img
+                  class="w-full rounded-2xl"
+                  src="./assets/booking.png"
+                  alt="booking"
+                />
 
-            <!-- Booking system -->
-            <div class="mt-8 cursor-pointer lg:mt-36 lg:w-1/2">
-              <img
-                class="rounded-2xl"
-                src="./assets/booking.png"
-                alt="booking"
-              />
-              <figcaption
-                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
-              >
-                Mobile application
-              </figcaption>
-              <h4
-                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
-              >
-                Booking system
-              </h4>
-            </div>
+                <figcaption
+                  class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+                >
+                  Mobile application
+                </figcaption>
 
-            <!-- Juice product homepage -->
-            <div class="mt-8 cursor-pointer lg:w-1/2">
-              <img
-                class="rounded-2xl"
-                src="./assets/juice-product.png"
-                alt="juice-product"
-              />
-              <figcaption
-                class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
-              >
-                Front End applicati on
-              </figcaption>
-              <h4
-                class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
-              >
-                Juice product homepage
-              </h4>
+                <h4
+                  class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+                >
+                  Booking system
+                </h4>
+              </div>
+
+              <!-- Juice product homepage -->
+              <div class="mt-8 lg:ml-8">
+                <img
+                  class="w-full rounded-2xl"
+                  src="./assets/juice-product.png"
+                  alt="juice-product"
+                />
+
+                <figcaption
+                  class="text-[12px] font-light leading-[18px] text-gray3 lg:text-[14px] lg:leading-[21px]"
+                >
+                  Front End applicati on
+                </figcaption>
+
+                <h4
+                  class="text-[18px] font-medium leading-[27px] text-gray1 lg:text-[24px] lg:leading-[36px]"
+                >
+                  Juice product homepage
+                </h4>
+              </div>
             </div>
           </div>
 
+          <!-- see more link -->
           <div class="mt-8 flex items-center lg:justify-end">
             <a
               class="flex items-center text-[18px] leading-[27px] text-blue lg:text-[24px] lg:leading-9"
@@ -362,10 +385,13 @@
 
         <!-- OUR TEAM -->
         <article
+          id="clients"
           class="mx-auto mt-[108px] font-poppins lg:mt-[200px] lg:w-[80%]"
         >
           <!-- main article -->
-          <div class="flex flex-col items-center justify-between lg:flex-row">
+          <div
+            class="flex flex-col justify-between lg:flex-row lg:items-center"
+          >
             <!-- TEXT -->
             <div class="max-w-[280px] font-poppins font-medium">
               <h5 class="text-[18px] leading-[27px] text-red">Meet the team</h5>
@@ -378,26 +404,24 @@
             </div>
 
             <!-- IMAGES -->
-            <div
-              class="mt-8 grid grid-cols-2 items-center gap-4 lg:mt-0 lg:w-[50%]"
-            >
+            <div class="mt-8 grid grid-cols-2 items-center lg:mt-0 lg:w-[50%]">
               <!-- person 3 -->
               <img
-                class="rounded-2xl"
+                class="w-full rounded-2xl"
                 src="./assets/person3.png"
                 alt="person3"
               />
 
               <!-- person 1 and 2 -->
-              <div class="grid grid-rows-2 items-center gap-4">
+              <div class="ml-4 flex flex-col">
                 <img
-                  class="rounded-2xl"
+                  class="w-full rounded-2xl"
                   src="./assets/person1.png"
                   alt="person1"
                 />
 
                 <img
-                  class="rounded-2xl"
+                  class="mt-4 w-full rounded-2xl"
                   src="./assets/person2.png"
                   alt="person2"
                 />
@@ -406,9 +430,11 @@
           </div>
 
           <!-- quotes -->
-          <div class="mt-[98px] font-poppins font-medium lg:mt-[190px]">
+          <div
+            class="mt-[98px] max-w-[937px] font-poppins font-medium lg:mt-[190px]"
+          >
             <p
-              class="max-w-[937px] text-[24px] leading-9 text-gray1 lg:text-[36px] lg:leading-[54px]"
+              class="text-[24px] leading-9 text-gray1 lg:text-[36px] lg:leading-[54px]"
             >
               “Fast and outstanding resutls. Edie understands their customer’s
               needs. They have a young and talented team.”
@@ -434,7 +460,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="mt-[108px] bg-navy lg:mt-[200px]">
+    <footer id="contact" class="mt-[108px] bg-navy lg:mt-[200px]">
       <div class="mx-auto w-[80%] justify-between font-poppins lg:flex">
         <!-- navs -->
         <div class="mt-10 pt-8 lg:pt-0">
