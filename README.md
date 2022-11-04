@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/exMA4xhkUbx9OKYNwGXt">
       Solution
     </a>
     <span> | </span>
@@ -63,7 +63,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/vilasgannaram/edie-homepage.git
 
 ```
 
